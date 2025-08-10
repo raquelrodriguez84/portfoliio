@@ -1,71 +1,73 @@
+@use '../../styles/_varScss' as *;
+
 .inicio {
-    background-color: #181818;
-    color: #fff;
+    background-color: $color-background;
+    color: $color-text-light;
     padding: 5rem 2rem;
     text-align: center;
     min-height: 80vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  
+
     &__contenido {
-      max-width: 800px;
-      margin: 0 auto;
-  
-      h2 {
-        font-size: 2.8rem;
-        margin-bottom: 1rem;
-      }
-  
-      .subtitulo {
-        font-size: 1.4rem;
-        font-weight: 500;
-        margin-bottom: 1rem;
-        color: #00c3ff;
-      }
-  
-      p {
-        font-size: 1.1rem;
-        margin-bottom: 1.5rem;
-      }
-  
-      .btn {
-        display: inline-block;
-        margin-top: 2rem;
-        padding: 0.8rem 1.5rem;
-        background-color: #00c3ff;
-        color: #fff;
-        border-radius: 30px;
-        text-decoration: none;
-        transition: background 0.3s;
-  
-        &:hover {
-          background-color: #009ecb;
+        max-width: 800px;
+        margin: 0 auto;
+
+        h2 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            padding: 0 1rem;
         }
-      }
-  
-      .iconos {
-        display: flex;
-        justify-content: center;
-        gap: 1.5rem;
-        font-size: 2rem;
-        margin-top: 1rem;
-  
-        svg {
-          color: #00c3ff;
-          transition: transform 0.3s;
-  
-          &:hover {
-            transform: scale(1.2);
-          }
+
+        .subtitulo {
+            font-size: 1.4rem;
+            font-weight: 500;
+            margin-bottom: 1rem;
+            color: $color-primary;
         }
-      }
-  
-      h3 {
-        margin-top: 2rem;
-        font-size: 1.3rem;
-        color: #ccc;
-      }
+
+        p {
+            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.8rem 1.5rem;
+            background-color: $color-primary;
+            color: $color-text-light;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: background 0.3s;
+
+            &:hover {
+                background-color: $color-primary-hover;
+            }
+        }
+
+        .iconos {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            font-size: 2rem;
+            margin-top: 1rem;
+
+            svg {
+                color: $color-primary;
+                transition: transform 0.3s;
+
+                &:hover {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        h3 {
+            margin-top: 2rem;
+            font-size: 1.3rem;
+            color: $color-text-secondary;
+        }
     }
-  }
-  
+}

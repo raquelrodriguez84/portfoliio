@@ -1,0 +1,62 @@
+@use '../../styles/varScss' as *;
+
+.projects {
+  padding: 5rem 2rem;
+  background-color: $color-background;
+  text-align: center;
+
+  h2 {
+    font-size: 2.8rem;
+    margin-bottom: 2rem;
+    color: $primary-color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+  }
+
+  .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+
+    .project {
+      background-color: $color-card;
+      padding: 1.5rem;
+      border-radius: 12px;
+      box-shadow: $shadow-light;
+      transition: transform 0.3s, box-shadow 0.3s;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: $shadow-hover;
+      }
+
+      h3 {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+        color: $color-card-text;
+      }
+
+      p {
+        font-size: 1rem;
+        color: $color-card-text-secondary;
+        margin-bottom: 1rem;
+      }
+
+      a {
+        display: inline-block;
+        padding: 0.8rem 1.5rem;
+        background-color: #000; // Fondo negro
+        color: #00c3ff; // Letras azules
+        border-radius: 5px;
+        text-decoration: none;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+  
+        &:hover {
+          background-color: #00c3ff; // Fondo azul al pasar el mouse
+          color: #000; // Letras negras al pasar el mouse
+        }
+      }
+    }
+  }
+}

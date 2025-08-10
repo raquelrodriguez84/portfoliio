@@ -1,6 +1,6 @@
 import './Home.scss';
-import { Link } from 'react-router-dom';
-import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaPhp } from 'react-icons/fa';
+//import { Link } from 'react-router-dom';
+import { FaReact, FaHtml5, FaCss3Alt, FaJs, FaPhp} from 'react-icons/fa';
 
 const Inicio = () => {
   return (
@@ -8,10 +8,12 @@ const Inicio = () => {
       <div className="inicio__contenido">
         <h2>¡Hola, soy Raquel! </h2>
         <p className="subtitulo">
-          Desarrolladora web junior especializada en front-end con React.
+          Desarrolladora web junior
         </p>
         <p>
-          Me apasiona crear interfaces accesibles, limpias y funcionales.
+          Comencé mi formación en Desarrollo de Aplicaciones Web en Davante Academy en septiembre
+          de 2023 y finalicé el 14 de marzo de 2025. Dos días después, el 16 de marzo, inicié mis 
+          prácticas en IC Antequera, donde trabajé hasta el 30 de junio de 2025.
           Busco mi primera oportunidad profesional donde seguir creciendo y aportar valor.
         </p>
 
